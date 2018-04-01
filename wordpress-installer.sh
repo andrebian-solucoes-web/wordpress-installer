@@ -25,62 +25,30 @@ echo -e "\e[032m - Ok\e[0m"
 echo ""
 
 echo -e "\e[033mStep 5: Adding .gitignore\e[0m"
-echo "/*
-
-!wp-content/
-
-# ignore all files starting with .
-.*
-
-# track this file .gitignore (i.e. do NOT ignore it)
-!.gitignore
-
-# track .editorconfig file (i.e. do NOT ignore it)
-!.editorconfig
-
-# track readme.md in the root (i.e. do NOT ignore it)
-!readme.md
-
-# ignore all files that start with ~
-~*
-
-# ignore OS generated files
-ehthumbs.db
-Thumbs.db
-
-# ignore Editor files
-*.sublime-project
-*.sublime-workspace
-*.komodoproject
-
-# ignore log files and databases
+echo ".idea
 *.log
-*.sql
-*.sqlite
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/themes/twenty*
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
 
-# ignore compiled files
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# ignore packaged files
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-wp-content/*
-!wp-content/themes/
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+.idea
+.ftpquota
+error_log
+/vendor
 # ignore specific themes
-wp-content/themes/twenty*/
-wp-content/themes/index.php" > .gitignore
+wp-content/themes/twenty*/" > .gitignore
 echo -e "\e[032m - Ok\e[0m"
 echo ""
 
